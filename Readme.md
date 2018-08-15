@@ -102,7 +102,7 @@ Signature: IJHkuwcbNxDmtgglXeuoCZOVZczAUdYmSvaUWHOxznDFaFq/DyCIJIFkFvSx++TyD/23Z
 > Enter the signature in the signature block and click, "validate Wallet" 
 
 If everything works out fine than you should the following result:
-![result](./assets/result.png)
+![result](./assets/Result.png)
 
 ## step 6: document the process
 
