@@ -6,7 +6,7 @@
 
  > Download the Electrum from: https://electrum.org/#download
  
- From the Easy Installation option, download the correct version applicable for your OS. In this write up I downloaded the "Executable for OS X"
+ From the Easy Installation option, download an applicable for your OS. In this write up I downloaded the "Executable for OS X"
 
 ![installation](./assets/download-installation.png)
 
@@ -22,15 +22,17 @@
 
 ![create seed](./assets/create-seed.png)
 
-> on the dialog, choose Seed Type, select the "Standard option" and click next
+> In the dialog, choose Seed Type, select the "Standard option" and click next
 
 ![seed type](./assets/seed-type.png)
 
-> Electrum generated a seed and is composed of 12 random words and is used to generate your privat keys. NEVER expose or share the seed, as your wallet can be fully recovered from its seed. Note the words in a correct order an a pager and store it at a save location. Click next
+> Electrum generated a seed and is composed of 12 random words, and is used to generate your private keys. NEVER expose or share the seed! Your entire wallet can be fully recovered from its seed. Click next
+
+Note all the words in a correct order an a pager and store it at a save location.
 
 ![seed](./assets/seed-wallet-P1.png)
 
-> The next step is to confrim the seed, Type the seed phrase and click next. The button next becomes available as soon the seed phrase is correct.
+> The next step is to confirm the seed, Type the seed phrase and click next. The button next becomes available as soon the seed phrase is correct.
 
 According the Electrum website: the seed phrase created by Electrum has 132 bits of entropy
 
@@ -44,10 +46,11 @@ According the Electrum website: the seed phrase created by Electrum has 132 bits
 
 > Wallet created 
 
-## Step 2: walk through the wallet interface and find the wallet address. Please by so kind and share some bitcoins!
+## Step 2: walk through the wallet interface and find the wallet address. 
+
+Be so kind and share some bitcoins!
 
 The wallet interface looks straightforward, but it's a good idea to read some documentation first: http://docs.electrum.org/en/latest/index.html
-
 The following screenshot provides a wallet address
 
 ![wallet address](./assets/wallet-address.png)
@@ -77,7 +80,7 @@ This will be covered in step 4
 
 ![addresses in electrum](./assets/addresses-in-electrum.png)
 
-> Choose the address from the address list, and right click to open the menu, and select the option "sign/Verify message"
+> Choose the address from the address list, and right click to open the menu, select the option "sign/Verify message"
 
 ![sign verify message](./assets/sign-verify-message.png)
 
@@ -95,13 +98,14 @@ Copy the message from the web app as shown above: 1MxPMAbKDMs8Ld6FgtZdTBhWngsUZr
 
 ![signature](./assets/signature.png)
 
-Signature: IJHkuwcbNxDmtgglXeuoCZOVZczAUdYmSvaUWHOxznDFaFq/DyCIJIFkFvSx++TyD/23ZjAKbiJtygxm5gYvhcU=
+Signature: `IJHkuwcbNxDmtgglXeuoCZOVZczAUdYmSvaUWHOxznDFaFq/DyCIJIFkFvSx++TyD/23ZjAKbiJtygxm5gYvhcU=`
 
 ## step 5: Validate the message signature with the udacity web application
 
 > Enter the signature in the signature block and click, "validate Wallet" 
 
-If everything works out fine than you should the following result:
+The webservice uses a method VerifyMessage, documentation can be found at: https://bitcoin.org/en/developer-reference#verifymessage
+
 ![result](./assets/Result.png)
 
 ## step 6: document the process
